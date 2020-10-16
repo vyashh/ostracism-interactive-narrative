@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://npc.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World.gd" type="Script" id=3]
+
+[node name="World" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 710.198, 244.224 )
+
+[node name="NPC" parent="." instance=ExtResource( 1 )]
+position = Vector2( 303.407, 194.031 )
+
+[node name="NPC2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 838.279, 88.0994 )
+
+[node name="NPC3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 169.525, 331.04 )
